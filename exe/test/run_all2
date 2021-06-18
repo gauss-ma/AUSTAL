@@ -1,0 +1,28 @@
+#!/bin/bash
+
+./test/cleardir test/2h50a95
+./austal2000 -D test/2h50a95
+
+./test/cleardir test/2h50a95-2
+./austal2000 -D test/h50a95-2
+
+./test/cleardir test/2h50a95g
+./austal2000 -D test/h50a95g
+
+WORK='test/h50a95c'
+./test/cleardir ${WORK}
+if [ -d ${WORK}/lib ] ; then
+  cd ${WORK}/lib
+  rm -f v*.dmn*
+  rm -f k*.dmn*
+  rm -f w*.dmn*
+  rm -f z*.dmna
+  rm -f *.log
+  cd ../../../
+fi
+rmdir ${WORK}/lib
+rm -f  ${WORK}/zg*.dmna
+./austal2000 -D ${WORK}
+
+echo "run_all2 finished"
+

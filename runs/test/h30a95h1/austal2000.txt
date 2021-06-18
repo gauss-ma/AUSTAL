@@ -1,0 +1,23 @@
+- TEST
+ti "Test H30A95H1"
+az "../anno95.akterm"
+gh "hill.dmna"
+gx  3500000.0
+gy  5900000.0
+qs     -2
+xa     10
+ya     10
+hq     30 
+x0      0
+y0      0
+dd     30
+nx     30
+ny     30
+xq    250
+yq    450
+no2   2.78  ' 10 kg/h
+no    1.81  ' 10 kg NO2/h
+so2   5.56  ' 20 kg/h
+pm-1  2.78  ' 10 kg/h
+pm-2  2.78  ' 10 kg/h
+

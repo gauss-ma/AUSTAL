@@ -1,0 +1,12 @@
+#!/bin/bash
+
+./test/cleardir test/odor/h50a95
+./austal2000 -D test/odor/h50a95
+
+./test/cleardir test/odor/h10aksn
+./austal2000 -D test/odor/h10aksn
+
+./test/cleardir test/odor/h20rated
+./austal2000 -D test/odor/h20rated
+
+echo "run_odor finished"

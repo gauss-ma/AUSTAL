@@ -1,0 +1,55 @@
+#!/bin/bash
+
+WORK='test/h30a95h1'
+./test/cleardir ${WORK}
+if [ -d ${WORK}/lib ] ; then
+  cd ${WORK}/lib
+  rm -f v*.dmn*
+  rm -f k*.dmn*
+  rm -f w*.dmn*
+  rm -f z*.dmna
+  rm -f *.log
+  cd ../../../
+fi
+rmdir ${WORK}/lib
+rm -f ${WORK}/zg*.dmna
+./austal2000 -D ${WORK}
+
+./test/cleardir test/h30a95h0
+./austal2000 -D test/h30a95h0
+
+./test/cleardir test/h50a95n
+./austal2000 -D test/h50a95n
+
+WORK='test/h50a95cn'
+./test/cleardir ${WORK}
+if [ -d ${WORK}/lib ] ; then
+  cd ${WORK}/lib
+  rm -f v*.dmn*
+  rm -f k*.dmn*
+  rm -f w*.dmn*
+  rm -f z*.dmna
+  rm -f *.log
+  cd ../../../
+fi
+rmdir ${WORK}/lib
+rm -f ${WORK}/zg*.dmna
+./austal2000 -D ${WORK}
+
+./test/cleardir test/h00aks-nh3
+./austal2000 -D test/h00aks-nh3
+
+./test/cleardir test/house-01
+./austal2000 -D test/house-01
+
+./test/cleardir test/tower-01
+./austal2000 -D test/tower-01
+
+./test/cleardir test/tower-02
+./austal2000 -D test/tower-02
+
+./test/cleardir test/simple
+./austal2000 -D test/simple
+
+echo "run_all3 finished"
+

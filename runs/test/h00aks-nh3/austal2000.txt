@@ -1,0 +1,18 @@
+- TEST situation dependent source strength
+ti "Test h00aks-nh3"
+as "../anonym.aks"
+z0    0.2
+ha   11.2
+qs     -2
+hq      0 
+xq     -8
+yq    -30
+aq     16
+bq     60
+cq      5
+wq      0
+nh3     ?
+-----------------------------------
+xp  100 200 300 400 500 600 700 800
+yp    0   0   0   0   0   0   0   0
+===================================

@@ -1,0 +1,110 @@
+2014-02-21 23:58:10 ---------------------------------------------------------
+TalServer:test/house-01
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/house-01 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test House-01"
+> az "anno95-01-01.akterm"
+> gh    *
+> dd    4
+> x0    0
+> y0    0
+> nx   50
+> ny   50
+> os   "+NOSTANDARD"		' for accepting hh
+> hh	  0 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60
+> xa    2
+> ya    2
+> z0    0.5
+> qs   -2
+> hq    2
+> xq   98
+> yq   78
+> so2   0.556  ' 2 kg/h
+> xp    98     98
+> yp    26    130
+================================ End of input ===============================
+
+Existing wind field library is being used.
+>>> Deviation from the standard (option NOSTANDARD)!
+
+The height hq of source 1 is less than 10 m.
+The maximum steepness of the surface is 0.00 (0.00).
+
+AKTerm "test/house-01/anno95-01-01.akterm" with 24 rows, format 3
+The anemometer height ha=14.4 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   ac42e4cc
+
+Library fields "additional K" used.
+Library fields "additional Sigmas" used.
+
+=====================================================================
+
+TMT: Evaluation of results for substance "so2"
+TMT: File "test/house-01/so2-y00a" written.
+TMT: File "test/house-01/so2-y00s" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TQL: Calculation of short time averages for "so2"
+TQL: Accepted number of exceedances changed to 0.
+TQL: File "test/house-01/so2-h24a" written.
+TQL: File "test/house-01/so2-h24s" written.
+TQL: File "test/house-01/so2-h00a" written.
+TQL: File "test/house-01/so2-h00s" written.
+TMO: Time series at monitor points for "so2"
+TMO: File "test/house-01/so2-tmpa" written.
+TMO: File "test/house-01/so2-tmps" written.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+WARNING: One or more sources are lower than 10 m.
+         Therefore, the listed maximum values are possibly
+         not relevant for an assessment!
+
+Maximum values, Concentration at z=2.0 m
+========================================
+SO2      Y00 : 2757.2 µg/m³ (+/-  0.7%) at x=   98 m, y=   78 m ( 25, 20)
+SO2      D03 :   n.a.
+SO2      D00 :   n.a.
+SO2      H24 :  3907 µg/m³ (+/-  4.2%) at x=   98 m, y=   78 m ( 25, 20)
+SO2      H00 :  3907 µg/m³ (+/-  4.2%) at x=   98 m, y=   78 m ( 25, 20)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02
+xp                          98                98
+yp                          26               130
+hp                         1.5               1.5
+------------+-----------------+-----------------
+SO2      Y00         0.0  0.0%        12.7 13.3%  µg/m³
+SO2      D03         0.0  0.0%        12.7 13.3%  *** 0 ***  µg/m³
+SO2      H24         0.0  0.0%        80.4 19.0%  *** 0 ***  µg/m³
+=====================================================================
+
+=====================================================================
+
+2014-02-21 23:58:34 AUSTAL2000 finished.
+
+
+

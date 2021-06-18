@@ -1,0 +1,6 @@
+ti "Test Simple"
+az "../anno95.akterm"
+z0      0.5
+hq       20 
+so2    2.78  ' 10 kg/h
+qs       -4

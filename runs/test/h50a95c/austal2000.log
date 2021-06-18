@@ -1,0 +1,164 @@
+2014-02-24 21:32:11 ---------------------------------------------------------
+TalServer:test/h50a95c
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/h50a95c 
+
+Program created at 2014-02-24 17:10:58
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test H50A95C"
+> az "../anno95.akterm"
+> gh "../tittling.grid"
+> gx  4600000
+> gy  5400000
+> qs       -2
+> xa     4400
+> ya     2000
+> hq       50
+> xq     4600
+> yq     2000
+> no2   2.78  ' 10 kg/h
+> no    1.81  ' 10 kg NO2/h
+> so2   5.56  ' 20 kg/h
+> pm-1  2.78  ' 10 kg/h
+> pm-2  2.78  ' 10 kg/h
+> xp  4975   4225
+> yp  1975   1975
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd     50
+x0   2100
+nx    100
+y0   -500
+ny    100
+nz     19
+---------
+The maximum steepness of the surface is 0.63 (0.61).
+Existing terrain file zg00.dmna is used.
+
+Standard register z0-gk.dmna (3b0d22a5) is used.
+Z0: Representation in zone 3: source 01 (4604600, 5402000) -> (3825154, 5410467)
+The average value of z0 determined from the register is 0.304 m.
+The value of z0 is rounded to 0.20 m.
+
+AKTerm "test/h50a95c/../anno95.akterm" with 8760 rows, format 3
+The anemometer height ha=9.8 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   722ecefc
+Check sum TALDIA   6fb37a2b
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   d489e344
+
+=====================================================================
+
+TMT: Evaluation of results for substance "so2"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a95c/so2-y00a" written.
+TMT: File "test/h50a95c/so2-y00s" written.
+TMT: File "test/h50a95c/so2-d03a" written.
+TMT: File "test/h50a95c/so2-d03s" written.
+TMT: File "test/h50a95c/so2-d03i" written.
+TMT: File "test/h50a95c/so2-d00a" written.
+TMT: File "test/h50a95c/so2-d00s" written.
+TMT: File "test/h50a95c/so2-d00i" written.
+TMT: Evaluation of results for substance "no2"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a95c/no2-y00a" written.
+TMT: File "test/h50a95c/no2-y00s" written.
+TMT: Evaluation of results for substance "pm"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a95c/pm-y00a" written.
+TMT: File "test/h50a95c/pm-y00s" written.
+TMT: File "test/h50a95c/pm-d35a" written.
+TMT: File "test/h50a95c/pm-d35s" written.
+TMT: File "test/h50a95c/pm-d35i" written.
+TMT: File "test/h50a95c/pm-d00a" written.
+TMT: File "test/h50a95c/pm-d00s" written.
+TMT: File "test/h50a95c/pm-d00i" written.
+TMT: File "test/h50a95c/pm-depa" written.
+TMT: File "test/h50a95c/pm-deps" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TQL: Calculation of short time averages for "so2"
+TQL: File "test/h50a95c/so2-h24a" written.
+TQL: File "test/h50a95c/so2-h24s" written.
+TQL: File "test/h50a95c/so2-h00a" written.
+TQL: File "test/h50a95c/so2-h00s" written.
+TQL: Calculation of short time averages for "no2"
+TQL: File "test/h50a95c/no2-h18a" written.
+TQL: File "test/h50a95c/no2-h18s" written.
+TQL: File "test/h50a95c/no2-h00a" written.
+TQL: File "test/h50a95c/no2-h00s" written.
+TMO: Time series at monitor points for "so2"
+TMO: File "test/h50a95c/so2-tmpa" written.
+TMO: File "test/h50a95c/so2-tmps" written.
+TMO: Time series at monitor points for "no2"
+TMO: File "test/h50a95c/no2-tmpa" written.
+TMO: File "test/h50a95c/no2-tmps" written.
+TMO: Time series at monitor points for "pm"
+TMO: File "test/h50a95c/pm-tmpa" written.
+TMO: File "test/h50a95c/pm-tmps" written.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+Maximum values, Deposition
+==========================
+PM       DEP : 0.0021 g/(m²*d) (+/-  2.3%) at x= 4975 m, y= 1775 m ( 58, 46)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+SO2      Y00 :   4.4 µg/m³ (+/-  1.8%) at x= 4975 m, y= 1775 m ( 58, 46)
+SO2      D03 :    45 µg/m³ (+/- 10.6%) at x= 4475 m, y= 2175 m ( 48, 54)
+SO2      D00 :    93 µg/m³ (+/- 12.6%) at x= 4675 m, y= 1725 m ( 52, 45)
+SO2      H24 :   221 µg/m³ (+/- 33.7%) at x= 4475 m, y= 2175 m ( 48, 54)
+SO2      H00 :  1026 µg/m³ (+/- 61.6%) at x= 4775 m, y= 3175 m ( 54, 74)
+NO2      Y00 :   2.4 µg/m³ (+/-  2.2%) at x= 5075 m, y= 1725 m ( 60, 45)
+NO2      H18 :   140 µg/m³ (+/- 31.6%) at x= 4475 m, y= 2175 m ( 48, 54)
+NO2      H00 :   798 µg/m³ (+/- 62.0%) at x= 4775 m, y= 3175 m ( 54, 74)
+PM       Y00 :   4.0 µg/m³ (+/-  1.7%) at x= 4975 m, y= 1775 m ( 58, 46)
+PM       D35 :  14.6 µg/m³ (+/- 13.8%) at x= 5075 m, y= 1725 m ( 60, 45)
+PM       D00 :  81.6 µg/m³ (+/- 12.2%) at x= 4675 m, y= 1725 m ( 52, 45)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02
+xp                        4975              4225
+yp                        1975              1975
+hp                         1.5               1.5
+------------+-----------------+-----------------
+SO2      Y00         3.7  1.9%         3.1  2.7%  µg/m³
+SO2      D03        24.2 10.2%        31.8 16.2%  µg/m³
+SO2      D00        33.8 13.6%        43.4 13.6%  µg/m³
+SO2      H24       115.1 69.6%       126.8 23.8%  µg/m³
+SO2      H00       249.0 27.2%       303.6 43.3%  µg/m³
+NO2      Y00         1.9  2.1%         1.7  2.9%  µg/m³
+NO2      H18        68.1 34.9%        77.6 37.2%  µg/m³
+NO2      H00       148.0 27.8%       172.8 43.8%  µg/m³
+PM       DEP      0.0015  2.6%      0.0011  3.5%  g/(m²*d)
+PM       Y00         3.4  1.8%         2.8  2.6%  µg/m³
+PM       D35        10.9 22.8%        12.3 21.5%  µg/m³
+PM       D00        31.3 11.8%        40.5 13.5%  µg/m³
+=====================================================================
+
+=====================================================================
+
+2014-02-24 23:46:13 AUSTAL2000 finished.
+
+
+

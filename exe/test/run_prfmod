@@ -1,0 +1,9 @@
+#!/bin/bash
+
+./test/cleardir test/prfmod/h10a95
+./austal2000 -D test/prfmod/h10a95
+
+./test/cleardir test/prfmod/h10a95-prfmod
+./austal2000 -D test/prfmod/h10a95-prfmod
+
+echo "run_prfmod finished"

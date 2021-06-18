@@ -1,0 +1,126 @@
+2014-02-24 21:06:31 ---------------------------------------------------------
+TalServer:test/h50a95-2
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/h50a95-2 
+
+Program created at 2014-02-24 17:10:58
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test H50A95-2"
+> az "../anno95.akterm"
+> gx  3500000
+> gy  5900000
+> z0      0.5
+> qs       -2
+> dd       50
+> x0    -1000
+> y0    -1000
+> nx       40
+> ny       40
+> hq   50     0 ' stack +
+> xq    0     0 ' diffuse source
+> yq    0  -100
+> aq    0   150
+> bq    0    50
+> cq    0     4
+> wq    0    45
+> so2      ?  0.0000 ' time-dependent
+> pb-3  0.00  0.0007 ' 0.1*0.025 kg/h
+> xp   375   -375
+> yp   -25    -25
+================================ End of input ===============================
+
+The height hq of source 2 is less than 10 m.
+The time series file "test/h50a95-2/series.dmna" is used.
+The parameter "az ../anno95.akterm" is ignored.
+The anemometer height ha=13.0 m is used.
+
+Check sum AUSTAL   722ecefc
+Check sum TALDIA   6fb37a2b
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum SERIES   ee331c03
+
+=====================================================================
+
+TMT: Evaluation of results for substance "so2"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a95-2/so2-y00a" written.
+TMT: File "test/h50a95-2/so2-y00s" written.
+TMT: File "test/h50a95-2/so2-d03a" written.
+TMT: File "test/h50a95-2/so2-d03s" written.
+TMT: File "test/h50a95-2/so2-d03i" written.
+TMT: File "test/h50a95-2/so2-d00a" written.
+TMT: File "test/h50a95-2/so2-d00s" written.
+TMT: File "test/h50a95-2/so2-d00i" written.
+TMT: Evaluation of results for substance "pb"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a95-2/pb-y00a" written.
+TMT: File "test/h50a95-2/pb-y00s" written.
+TMT: File "test/h50a95-2/pb-depa" written.
+TMT: File "test/h50a95-2/pb-deps" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TQL: Calculation of short time averages for "so2"
+TQL: File "test/h50a95-2/so2-h24a" written.
+TQL: File "test/h50a95-2/so2-h24s" written.
+TQL: File "test/h50a95-2/so2-h00a" written.
+TQL: File "test/h50a95-2/so2-h00s" written.
+TMO: Time series at monitor points for "so2"
+TMO: File "test/h50a95-2/so2-tmpa" written.
+TMO: File "test/h50a95-2/so2-tmps" written.
+TMO: No concentration values for "pb" found!
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+WARNING: One or more sources are lower than 10 m.
+         Therefore, the listed maximum values are possibly
+         not relevant for an assessment!
+
+Maximum values, Deposition
+==========================
+PB       DEP : 2422.9 µg/(m²*d) (+/-  0.1%) at x=   25 m, y=  -25 m ( 21, 20)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+SO2      Y00 :   5.1 µg/m³ (+/-  2.9%) at x=  325 m, y=  -75 m ( 27, 19)
+SO2      D03 :    64 µg/m³ (+/- 14.3%) at x= -275 m, y=  -25 m ( 15, 20)
+SO2      D00 :   155 µg/m³ (+/- 19.5%) at x=  325 m, y=  425 m ( 27, 29)
+SO2      H24 :   294 µg/m³ (+/- 51.6%) at x= -175 m, y=  375 m ( 17, 28)
+SO2      H00 :  1576 µg/m³ (+/- 26.0%) at x=  325 m, y=  425 m ( 27, 29)
+PB       Y00 : 0.000 µg/m³ (+/-  0.0%)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02
+xp                         375              -375
+yp                         -25               -25
+hp                         1.5               1.5
+------------+-----------------+-----------------
+SO2      Y00         4.6  2.9%         4.4  3.0%  µg/m³
+SO2      D03        42.6 35.3%        54.4 15.3%  µg/m³
+SO2      D00        55.6 15.2%        62.1 13.0%  µg/m³
+SO2      H24       185.6 64.0%       227.0 54.1%  µg/m³
+SO2      H00       608.8 33.0%       539.9 49.1%  µg/m³
+PB       DEP        10.8  0.6%         6.3  0.8%  µg/(m²*d)
+=====================================================================
+
+=====================================================================
+
+2014-02-24 21:17:38 AUSTAL2000 finished.
+
+
+

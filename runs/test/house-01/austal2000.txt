@@ -1,0 +1,23 @@
+- TEST flow around a building
+ti "Test House-01"
+az "anno95-01-01.akterm"
+gh    *
+dd    4
+x0    0
+y0    0
+nx   50
+ny   50
+os   "+NOSTANDARD"		' for accepting hh
+hh	  0 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60
+xa    2
+ya    2
+z0    0.5
+qs   -2
+hq    2
+xq   98
+yq   78
+so2   0.556  ' 2 kg/h
+-------------------------
+xp    98     98
+yp    26    130
+=========================

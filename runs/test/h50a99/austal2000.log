@@ -1,0 +1,153 @@
+2014-02-21 17:44:33 ---------------------------------------------------------
+TalServer:test/h50a99
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/h50a99 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test H50A99"
+> az "../anno99.akterm"
+> gx  3500000
+> gy  5900000
+> z0      0.5
+> qs       -2
+> hq       50
+> no2   2.78  ' 10 kg/h
+> no    1.81  ' 10 kg NO2/h
+> so2   5.56  ' 20 kg/h
+> pm-1  2.78  ' 10 kg/h
+> pm-2  2.78  ' 10 kg/h
+> xp   375   -375
+> yp   -25    -25
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd     50
+x0  -2500
+nx    100
+y0  -2500
+ny    100
+nz     19
+---------
+
+AKTerm "test/h50a99/../anno99.akterm" with 8760 rows, format 3
+The anemometer height ha=14.4 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   4d4ff145
+
+=====================================================================
+
+TMT: Evaluation of results for substance "so2"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a99/so2-y00a" written.
+TMT: File "test/h50a99/so2-y00s" written.
+TMT: File "test/h50a99/so2-d03a" written.
+TMT: File "test/h50a99/so2-d03s" written.
+TMT: File "test/h50a99/so2-d03i" written.
+TMT: File "test/h50a99/so2-d00a" written.
+TMT: File "test/h50a99/so2-d00s" written.
+TMT: File "test/h50a99/so2-d00i" written.
+TMT: Evaluation of results for substance "no2"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a99/no2-y00a" written.
+TMT: File "test/h50a99/no2-y00s" written.
+TMT: Evaluation of results for substance "pm"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/h50a99/pm-y00a" written.
+TMT: File "test/h50a99/pm-y00s" written.
+TMT: File "test/h50a99/pm-d35a" written.
+TMT: File "test/h50a99/pm-d35s" written.
+TMT: File "test/h50a99/pm-d35i" written.
+TMT: File "test/h50a99/pm-d00a" written.
+TMT: File "test/h50a99/pm-d00s" written.
+TMT: File "test/h50a99/pm-d00i" written.
+TMT: File "test/h50a99/pm-depa" written.
+TMT: File "test/h50a99/pm-deps" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TQL: Calculation of short time averages for "so2"
+TQL: File "test/h50a99/so2-h24a" written.
+TQL: File "test/h50a99/so2-h24s" written.
+TQL: File "test/h50a99/so2-h00a" written.
+TQL: File "test/h50a99/so2-h00s" written.
+TQL: Calculation of short time averages for "no2"
+TQL: File "test/h50a99/no2-h18a" written.
+TQL: File "test/h50a99/no2-h18s" written.
+TQL: File "test/h50a99/no2-h00a" written.
+TQL: File "test/h50a99/no2-h00s" written.
+TMO: Time series at monitor points for "so2"
+TMO: File "test/h50a99/so2-tmpa" written.
+TMO: File "test/h50a99/so2-tmps" written.
+TMO: Time series at monitor points for "no2"
+TMO: File "test/h50a99/no2-tmpa" written.
+TMO: File "test/h50a99/no2-tmps" written.
+TMO: Time series at monitor points for "pm"
+TMO: File "test/h50a99/pm-tmpa" written.
+TMO: File "test/h50a99/pm-tmps" written.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+Maximum values, Deposition
+==========================
+PM       DEP : 0.0017 g/(m²*d) (+/-  2.5%) at x=  325 m, y= -125 m ( 57, 48)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+SO2      Y00 :   4.3 µg/m³ (+/-  2.1%) at x=  525 m, y=   25 m ( 61, 51)
+SO2      D03 :    35 µg/m³ (+/- 12.8%) at x= -575 m, y=   25 m ( 39, 51)
+SO2      D00 :    65 µg/m³ (+/- 20.7%) at x= -175 m, y=  225 m ( 47, 55)
+SO2      H24 :   145 µg/m³ (+/- 45.4%) at x= -175 m, y=  275 m ( 47, 56)
+SO2      H00 :   708 µg/m³ (+/- 44.0%) at x=  625 m, y=  475 m ( 63, 60)
+NO2      Y00 :   2.2 µg/m³ (+/-  2.3%) at x=  375 m, y= -175 m ( 58, 47)
+NO2      H18 :   103 µg/m³ (+/- 50.7%) at x= -175 m, y=  275 m ( 47, 56)
+NO2      H00 :   429 µg/m³ (+/- 30.1%) at x=-1275 m, y= -175 m ( 25, 47)
+PM       Y00 :   3.9 µg/m³ (+/-  1.9%) at x=  425 m, y= -125 m ( 59, 48)
+PM       D35 :  14.0 µg/m³ (+/- 19.1%) at x=  375 m, y= -175 m ( 58, 47)
+PM       D00 :  54.0 µg/m³ (+/- 17.7%) at x=  -75 m, y=  125 m ( 49, 53)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02
+xp                         375              -375
+yp                         -25               -25
+hp                         1.5               1.5
+------------+-----------------+-----------------
+SO2      Y00         4.1  2.0%         2.5  3.1%  µg/m³
+SO2      D03        25.5 18.9%        26.1 23.4%  µg/m³
+SO2      D00        29.1 18.2%        27.6 19.4%  µg/m³
+SO2      H24       112.0 37.0%       114.0 54.3%  µg/m³
+SO2      H00       265.5 39.3%       362.0 50.1%  µg/m³
+NO2      Y00         2.1  2.1%         1.4  3.3%  µg/m³
+NO2      H18        70.2 53.9%        72.5 39.5%  µg/m³
+NO2      H00       190.6 38.7%       217.2 50.8%  µg/m³
+PM       DEP      0.0017  2.4%      0.0010  3.5%  g/(m²*d)
+PM       Y00         3.8  1.9%         2.3  2.9%  µg/m³
+PM       D35        13.1 20.6%        10.4 17.7%  µg/m³
+PM       D00        25.7 17.1%        26.1 15.4%  µg/m³
+=====================================================================
+
+=====================================================================
+
+2014-02-21 17:59:07 AUSTAL2000 finished.
+
+
+

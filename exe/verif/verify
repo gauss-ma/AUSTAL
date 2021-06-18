@@ -1,0 +1,18 @@
+#!/bin/bash
+# Run all verifications
+#
+austal2000 -D verif/00
+austal2000 -D verif/01
+austal2000 -D verif/02
+austal2000 -D verif/11  
+austal2000 -D verif/13  
+austal2000 -D verif/14  
+austal2000 -D verif/21  
+austal2000 -D verif/22a 
+austal2000 -D verif/22b 
+austal2000 -D verif/31  
+austal2000 -D verif/41  
+austal2000 -D verif/51a 
+austal2000 -D verif/51b 
+austal2000 -D verif/51c 
+austal2000 -D verif/61 

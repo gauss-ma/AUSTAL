@@ -1,0 +1,19 @@
+#!/bin/bash
+# Evaluation of verification runs
+rm verif/result.txt
+verif/verif00 
+verif/verif01
+verif/verif02
+verif/verif11
+verif/verif13 
+verif/verif14
+verif/verif21 
+verif/verif22a
+verif/verif22b
+verif/verif31 
+verif/verif41  
+verif/verif51a 
+verif/verif51b
+verif/verif51c
+verif/verif61  
+

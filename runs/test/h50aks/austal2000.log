@@ -1,0 +1,110 @@
+2014-02-21 16:30:20 ---------------------------------------------------------
+TalServer:test/h50aks
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/h50aks 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test H50AKS"
+> as "../anonym.aks"
+> gx  3500000
+> gy  5900000
+> ha     14.4
+> z0      0.5
+> qs       -2
+> hq       50
+> no2   2.78  ' 10 kg/h
+> no    1.81  ' 10 kg NO2/h
+> so2   5.56  ' 20 kg/h
+> pm-1  2.78  ' 10 kg/h
+> pm-2  2.78  ' 10 kg/h
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd     50
+x0  -2500
+nx    100
+y0  -2500
+ny    100
+nz     19
+---------
+
+1: ANONYM 
+2: 01.10.1995 - 31.12.1999 
+3: KLUG/MANIER (TA-LUFT) 
+4: JAHR 
+5: ALLE FAELLE 
+In class 1: sum=8751
+In class 2: sum=21099
+In class 3: sum=45347
+In class 4: sum=13547
+In class 5: sum=7725
+In class 6: sum=3554
+Statistics "../anonym.aks" with sum=100023.0000 normalized.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKS      3fefe376
+
+=====================================================================
+
+TMT: Evaluation of results for substance "so2"
+TMT: File "test/h50aks/so2-y00a" written.
+TMT: File "test/h50aks/so2-y00s" written.
+TMT: Evaluation of results for substance "no2"
+TMT: File "test/h50aks/no2-y00a" written.
+TMT: File "test/h50aks/no2-y00s" written.
+TMT: Evaluation of results for substance "pm"
+TMT: File "test/h50aks/pm-y00a" written.
+TMT: File "test/h50aks/pm-y00s" written.
+TMT: File "test/h50aks/pm-depa" written.
+TMT: File "test/h50aks/pm-deps" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TQL: Calculation of short time averages for "so2"
+TQL: File "test/h50aks/so2-h24a" written.
+TQL: File "test/h50aks/so2-h00a" written.
+TQL: Calculation of short time averages for "no2"
+TQL: File "test/h50aks/no2-h18a" written.
+TQL: File "test/h50aks/no2-h00a" written.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+Maximum values, Deposition
+==========================
+PM       DEP : 0.0017 g/(m²*d) (+/-  2.5%) at x=  325 m, y=  -75 m ( 57, 49)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+SO2      Y00 :   4.2 µg/m³ (+/-  2.0%) at x=  375 m, y=  -75 m ( 58, 49)
+SO2      D03 :   n.a.
+SO2      D00 :   n.a.
+SO2      H24 :   142 µg/m³ (+/-  ?  %) at x= -225 m, y=  275 m ( 46, 56)
+SO2      H00 :   652 µg/m³ (+/-  ?  %) at x= -725 m, y= -175 m ( 36, 47)
+NO2      Y00 :   2.2 µg/m³ (+/-  2.0%) at x=  375 m, y=  -75 m ( 58, 49)
+NO2      H18 :    92 µg/m³ (+/-  ?  %) at x=  375 m, y= -125 m ( 58, 48)
+NO2      H00 :   364 µg/m³ (+/-  ?  %) at x= -725 m, y= -175 m ( 36, 47)
+PM       Y00 :   3.9 µg/m³ (+/-  2.0%) at x=  375 m, y=  -75 m ( 58, 49)
+PM       D35 :   n.a.
+PM       D00 :   n.a.
+=====================================================================
+
+2014-02-21 16:46:01 AUSTAL2000 finished.
+
+
+

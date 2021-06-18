@@ -1,0 +1,171 @@
+# language definitions "nls/en/VRF_en"
+# 2.6.11
+**** verif00
+0000 Problems observed with native language support \"%s\"\n
+0001 00: Estimation of sampling error\n
+0002  N      Mean  Observed Estimated\n
+0003 *** Can't read file \"%s\"!\n
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for j=%d!\n
+0006 *** Can't read data element (%d,%d)!\n
+**** verif01
+0000 Problems observed with native language support \"%s\"\n
+0001 01: Calculation of odour hour frequencies\n\n
+0002 Mean daily concentration value :\n
+0003  N      Mean  Observed Estimated\n
+0004 *** Can't read file \"%s\"!\n
+0005 *** Data section in file \"%s\" not found!\n
+0006 *** EOF encountered in \"%s\" for j=%d!\n
+0007 Can't read data element (%d,%d) in \"%s\"!\n
+0008 *** Improper dimensions in time series \"%s\"\n
+0009 Time series of concentration values:\n
+0010  P      Mean  Observed\n
+0011 Mean daily value of odour hour frequency:\n
+0012  N      Mean  Observed Estimated\n
+0013 Time series of odour hour frequency:\n
+0014  P      Mean  Observed   Counted\n
+**** verif02
+0000 Problems observed with native language support \"%s\"\n
+0001 02: Rating of odour hour frequencies\n\n
+0002 %-10s:
+0003 Component
+0004 Expected
+0005 Observed
+0006 *** Can't read file \"%s\"!\n
+**** verif11
+0000 Problems observed with native language support \"%s\"\n
+0001 11: Test for homogeneity: Homogeneous turbulence, constant time step\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for k=%d!\n
+0006 *** Can't read data element (%d)!\n
+0007  K    Cmin       C    Cmax\n
+**** verif13
+0000 Problems observed with native language support \"%s\"\n
+0001 13: Test for homogeneity: Inhomogeneous turbulence, constant time step\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for k=%d!\n
+0006 *** Can't read data element (%d)!\n
+0007  K    Cmin       C    Cmax\n
+**** verif14
+0000 Problems observed with native language support \"%s\"\n
+0001 14: Test for homogeneity: Inhomogeneous turbulence, variable time step\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for k=%d!\n
+0006 *** Can't read data element (%d)!\n
+0007  K    Cmin       C    Cmax\n
+**** verif21
+0000 Problems observed with native language support \"%s\"\n
+0001 21: Test of deposition: Deposition, no sedimentation\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for k=%d!\n
+0006 *** Can't read data element (%d)!\n
+0007  K    Cmin       C    Cmax   Cspec\n
+**** verif22a
+0000 Problems observed with native language support \"%s\"\n
+0001 22a: Test of deposition: Sedimentation, no deposition\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for k=%d!\n
+0006 *** Can't read data element (%d)!\n
+0007  K    Cmin       C    Cmax   Cspec\n
+**** verif22b
+0000 Problems observed with native language support \"%s\"\n
+0001 22b: Test of deposition: Sedimentation and deposition\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for k=%d!\n
+0006 *** Can't read data element (%d)!\n
+0007  K    Cmin       C    Cmax   Cspec\n
+**** verif23
+0000 Problems observed with native language support \"%s\"\n
+0001 23: Test of wet deposition\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for k=%d!\n
+0006 *** Can't read data element (%d)!\n
+0007  I      Cmin       C    Cmax      Wmin       W    Wmax\n
+**** verif31
+0000 Problems observed with native language support \"%s\"\n
+0001 31: Test of Taylors theorem\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for j=%d, k=%d!\n
+0006 *** Data element (%d,%d,%d) not found!\n
+0007 *** Can't read data element (%d,%d,%d)!\n
+0008  N      Sx      sx      Sy      sy      Sz      sz\n
+**** verif41
+0000 Problems observed with native language support \"%s\"\n
+0001 41: Test of Berljands profile\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for j=%d, k=%d!\n
+0006 *** Data element (%d,%d,%d) not found!\n
+0007 *** Can't read data element (%d,%d,%d)!\n
+0008   Z    Cmin       C    Cmax   Cspec\n
+**** verif51a
+0000 Problems observed with native language support \"%s\"\n
+0001 51a: Test of plume rise\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for j=%d, k=%d!\n
+0006 *** Data element (%d,%d,%d) not found!\n
+0007 *** Can't read data element (%d,%d,%d)!\n
+0008    X      Za      za      Sz      sz\n
+**** verif51b
+0000 Problems observed with native language support \"%s\"\n
+0001 51b: Test of plume rise (parameter sq)\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for j=%d, k=%d!\n
+0006 *** Data element (%d,%d,%d) not found!\n
+0007 *** Can't read data element (%d,%d,%d)!\n
+0008    X      Za      za      Sz      sz\n
+**** verif51c
+0000 Problems observed with native language support \"%s\"\n
+0001 51c: Test of plume rise (cooling tower)\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for j=%d, k=%d!\n
+0006 *** Data element (%d,%d,%d) not found!\n
+0007 *** Can't read data element (%d,%d,%d)!\n
+0008 *** Read error in line %d!\n
+0009    X      Za      za\n
+**** verif61
+0000 Problems observed with native language support \"%s\"\n
+0001 61: Test of particle trace in 3-dimensional wind field\n
+0002 *** Can't read file \"%s\"!\n
+0003 *** Invalid file structure in \"%s\"!
+0004 *** Data section in file \"%s\" not found!\n
+0005 *** EOF encountered for n=%d (%d lines)!\n
+0006 Read error in line %d!\n
+0007    T       X       x       Y       y\n
+**** TalCfg
+0000 en
+0002 dry
+0003 wet
+0004 d
+0005 i
+0006 a
+0007 s
+0008 y
+0009 h
+0010 tmpa
+0011 tmpp
+0012 tmps
+0013 series

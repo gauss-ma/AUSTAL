@@ -1,0 +1,106 @@
+2014-02-21 23:39:28 ---------------------------------------------------------
+TalServer:test/h00aks-nh3
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/h00aks-nh3 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test h00aks-nh3"
+> as "../anonym.aks"
+> z0    0.2
+> ha   11.2
+> qs     -2
+> hq      0
+> xq     -8
+> yq    -30
+> aq     16
+> bq     60
+> cq      5
+> wq      0
+> nh3     ?
+> xp  100 200 300 400 500 600 700 800
+> yp    0   0   0   0   0   0   0   0
+================================ End of input ===============================
+
+The height hq of source 1 is less than 10 m.
+Definition of the computational grid:
+dd     16
+x0  -1008
+nx    126
+y0  -1008
+ny    126
+nz     19
+---------
+
+1: ANONYM 
+2: 01.10.1995 - 31.12.1999 
+3: KLUG/MANIER (TA-LUFT) 
+4: JAHR 
+5: ALLE FAELLE 
+In class 1: sum=8751
+In class 2: sum=21099
+In class 3: sum=45347
+In class 4: sum=13547
+In class 5: sum=7725
+In class 6: sum=3554
+Statistics "../anonym.aks" with sum=100023.0000 normalized.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKS      3fefe376
+
+=====================================================================
+
+TMT: Evaluation of results for substance "nh3"
+TMT: File "test/h00aks-nh3/nh3-y00a" written.
+TMT: File "test/h00aks-nh3/nh3-y00s" written.
+TMT: File "test/h00aks-nh3/nh3-depa" written.
+TMT: File "test/h00aks-nh3/nh3-deps" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+WARNING: One or more sources are lower than 10 m.
+         Therefore, the listed maximum values are possibly
+         not relevant for an assessment!
+
+Maximum values, Deposition
+==========================
+NH3      DEP : 574.84 kg/(ha*a) (+/-  0.1%) at x=    8 m, y=    8 m ( 64, 64)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+NH3      Y00 : 161.88 µg/m³ (+/-  0.1%) at x=    8 m, y=    8 m ( 64, 64)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02                03                04                05                06                07                08
+xp                         100               200               300               400               500               600               700               800
+yp                           0                 0                 0                 0                 0                 0                 0                 0
+hp                         1.5               1.5               1.5               1.5               1.5               1.5               1.5               1.5
+------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------
+NH3      DEP       21.27  0.7%        6.35  1.2%        2.86  1.8%        1.48  2.6%        0.97  3.2%        0.71  3.7%        0.51  4.0%        0.35  4.5%  kg/(ha*a)
+NH3      Y00        7.42  0.4%        2.20  0.6%        1.00  1.0%        0.53  1.4%        0.35  1.7%        0.24  2.0%        0.19  2.1%        0.13  2.4%  µg/m³
+=====================================================================
+
+2014-02-21 23:58:09 AUSTAL2000 finished.
+
+
+

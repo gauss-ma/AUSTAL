@@ -1,0 +1,28 @@
+- TEST
+ti "Test H50A95CB"
+az "../../anno95.akterm"
+gh "../../tittling.grid"
+gx  4600000
+gy  5400000
+qs       -2
+xa     4400
+ya     2000
+hq       50 
+xq     4600
+yq     2000
+no2   2.78  ' 10 kg/h
+no    1.81  ' 10 kg NO2/h
+so2   5.56  ' 20 kg/h
+pm-1  2.78  ' 10 kg/h
+pm-2  2.78  ' 10 kg/h
+-------------------------
+xp  4975   4225
+yp  1975   1975
+-------------------------
+qb       -1
+xb     4710
+yb     1925
+cb       40
+bb      -40 ' tower diameter
+ab        0
+=========================

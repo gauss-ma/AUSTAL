@@ -1,0 +1,106 @@
+2014-02-22 07:19:08 ---------------------------------------------------------
+TalServer:test/odor/h50a95
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/odor/h50a95 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test odor/H50A95"
+> az "../../anno95.akterm"
+> gx  3500000
+> gy  5900000
+> z0     0.5
+> qs       0
+> hq      50
+> xx    100000  ' g/s
+> odor  100000  ' GE/s
+> xp   375   -375
+> yp   -25    -25
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd     50
+x0  -2500
+nx    100
+y0  -2500
+ny    100
+nz     19
+---------
+
+AKTerm "test/odor/h50a95/../../anno95.akterm" with 8760 rows, format 3
+The anemometer height ha=14.4 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   d489e344
+
+=====================================================================
+
+TMT: Evaluation of results for substance "xx"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/odor/h50a95/xx-y00a" written.
+TMT: File "test/odor/h50a95/xx-y00s" written.
+TMT: File "test/odor/h50a95/xx-depa" written.
+TMT: File "test/odor/h50a95/xx-deps" written.
+TMT: Evaluation of results for substance "odor"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/odor/h50a95/odor-y00a" written.
+TMT: File "test/odor/h50a95/odor-y00s" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TMO: Time series at monitor points for "xx"
+TMO: File "test/odor/h50a95/xx-tmpa" written.
+TMO: File "test/odor/h50a95/xx-tmps" written.
+TMO: Time series at monitor points for "odor"
+TMO: File "test/odor/h50a95/odor-tmpa" written.
+TMO: File "test/odor/h50a95/odor-tmps" written.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+Maximum values, Deposition
+==========================
+XX       DEP : 0.000e+000 g/(m²*d) (+/-  0.0%)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+XX       Y00 : 7.476e-002 g/m3  (+/-  1.1%) at x=  375 m, y= -125 m ( 58, 48)
+
+Maximum odour hour frequency  at z=1.5 m
+========================================
+ODOR     Y00 :   9.2 %     (+/-  0.1 ) at x=  375 m, y= -125 m ( 58, 48)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02
+xp                         375              -375
+yp                         -25               -25
+hp                         1.5               1.5
+------------+-----------------+-----------------
+XX       DEP  0.000e+000  0.0%  0.000e+000  0.0%  g/(m²*d)
+XX       Y00  6.652e-002  1.2%  6.992e-002  1.2%  g/m3
+ODOR     Y00         8.7  0.1          7.9  0.1   %
+=====================================================================
+
+=====================================================================
+
+2014-02-22 08:06:25 AUSTAL2000 finished.
+
+
+

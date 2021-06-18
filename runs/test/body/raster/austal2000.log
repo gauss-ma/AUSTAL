@@ -1,0 +1,97 @@
+2014-02-22 09:28:32 ---------------------------------------------------------
+TalServer:test\body\raster
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/body/raster 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test rasterised buildings"
+> az "../../anno95.akterm"
+> xa    -500
+> ya    -500
+> z0     0.5
+> qs      -2
+> hq      15
+> xq       0
+> yq       0
+> xx    5.56  ' 20 kg/h
+> qb      -2
+> rb "raster.dmna"
+================================ End of input ===============================
+
+Existing wind field library is being used.
+The maximum height of the buildings is 12.0 m.
+Definition of the vertical grid:
+    0.0    3.0    7.0   11.0   15.0   19.0   23.0   27.0   33.0   40.0
+   65.0  100.0  150.0  200.0  300.0  400.0  500.0  600.0  700.0  800.0
+ 1000.0 1200.0 1500.0
+----------------------------------------------------------------------
+Definition of the computational grid:
+dd     16     32     64
+x0   -352   -704  -1024
+nx     44     44     32
+y0   -352   -704  -1024
+ny     44     44     32
+nz      7     22     22
+-----------------------
+
+AKTerm "test/body/raster/../../anno95.akterm" with 8760 rows, format 3
+The anemometer height ha=14.4 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   d489e344
+
+Library fields "additional K" used (Grids 1).
+Library fields "additional Sigmas" used (Grids 1).
+
+=====================================================================
+
+TMT: Evaluation of results for substance "xx"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/body/raster/xx-y00a01" written.
+TMT: File "test/body/raster/xx-y00s01" written.
+TMT: File "test/body/raster/xx-depa01" written.
+TMT: File "test/body/raster/xx-deps01" written.
+TMT: File "test/body/raster/xx-y00a02" written.
+TMT: File "test/body/raster/xx-y00s02" written.
+TMT: File "test/body/raster/xx-depa02" written.
+TMT: File "test/body/raster/xx-deps02" written.
+TMT: File "test/body/raster/xx-y00a03" written.
+TMT: File "test/body/raster/xx-y00s03" written.
+TMT: File "test/body/raster/xx-depa03" written.
+TMT: File "test/body/raster/xx-deps03" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+Maximum values, Deposition
+==========================
+XX       DEP : 0.000e+000 g/(m²*d) (+/-  0.0%)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+XX       Y00 : 8.132e-004 g/m3  (+/-  0.5%) at x=   -8 m, y=   24 m (1: 22, 24)
+=====================================================================
+
+2014-02-22 10:34:58 AUSTAL2000 finished.
+
+
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+./austal2000 -D test/dust/h100-pm3a
+./austal2000 -D test/dust/h100-pm3b
+./austal2000 -D test/dust/h100-pm4a
+./austal2000 -D test/dust/h100-pm4b
+./austal2000 -D test/dust/h100-pmua
+./austal2000 -D test/dust/h100-pmub
+
+echo "run_dust finished"
+

@@ -1,0 +1,98 @@
+2014-02-21 22:17:30 ---------------------------------------------------------
+TwnServer:test/h50a95cn
+TwnServer:-B~../lib
+TwnServer:-w30000
+
+2014-02-21 22:17:30 TALdia 2.6.4-WI-x: Calculation of a wind field library.
+Programme created at 2014-02-20 13:22:59
+Programme is running on host "PHORKYAS"
+=============================== Start of input ==============================
+> ti "Test H50A95CN"
+> az "../anno95.akterm"
+> gh "../tittling.grid"
+> gx  4600000
+> gy  5400000
+> os  NESTING
+> qs       -2
+> xa     4400
+> ya     2000
+> hq       50
+> xq     4600
+> yq     2000
+> no2   2.78  ' 10 kg/h
+> no    1.81  ' 10 kg NO2/h
+> so2   5.56  ' 20 kg/h
+> pm-1  2.78  ' 10 kg/h
+> pm-2  2.78  ' 10 kg/h
+> xp  4975   4225
+> yp  1975   1975
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd     50    100    200
+x0   3500   2400   2000
+nx     44     44     26
+y0    900   -200   -800
+ny     44     44     28
+nz     19     19     19
+-----------------------
+The maximum steepness of the surface in grid 1 is 0.63 (0.59).
+The maximum steepness of the surface in grid 2 is 0.52 (0.45).
+The maximum steepness of the surface in grid 3 is 0.32 (0.28).
+
+Standard register z0-gk.dmna (3b0d22a5) is used.
+Z0: Representation in zone 3: source 01 (4604600, 5402000) -> (3825154, 5410467)
+The average value of z0 determined from the register is 0.304 m.
+The value of z0 is rounded to 0.20 m.
+
+AKTerm "test/h50a95cn/../anno95.akterm" with 8760 rows, format 3
+The anemometer height ha=9.8 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   d489e344
+2014-02-21 22:17:32 Remaining divergence = 0.011 (1018 11)  
+2014-02-21 22:17:38 Remaining divergence = 0.007 (1018 21)  
+2014-02-21 22:17:43 Remaining divergence = 0.015 (1018 31)  
+2014-02-21 22:17:44 Remaining divergence = 0.010 (1027 11)  
+2014-02-21 22:17:48 Remaining divergence = 0.006 (1027 21)  
+2014-02-21 22:17:53 Remaining divergence = 0.011 (1027 31)  
+2014-02-21 22:17:54 Remaining divergence = 0.009 (2018 11)  
+2014-02-21 22:17:59 Remaining divergence = 0.005 (2018 21)  
+2014-02-21 22:18:05 Remaining divergence = 0.011 (2018 31)  
+2014-02-21 22:18:05 Remaining divergence = 0.008 (2027 11)  
+2014-02-21 22:18:09 Remaining divergence = 0.004 (2027 21)  
+2014-02-21 22:18:14 Remaining divergence = 0.008 (2027 31)  
+2014-02-21 22:18:15 Remaining divergence = 0.004 (3018 11)  
+2014-02-21 22:18:19 Remaining divergence = 0.002 (3018 21)  
+2014-02-21 22:18:25 Remaining divergence = 0.003 (3018 31)  
+2014-02-21 22:18:25 Remaining divergence = 0.004 (3027 11)  
+2014-02-21 22:18:29 Remaining divergence = 0.002 (3027 21)  
+2014-02-21 22:18:34 Remaining divergence = 0.003 (3027 31)  
+2014-02-21 22:18:35 Remaining divergence = 0.005 (4018 11)  
+2014-02-21 22:18:39 Remaining divergence = 0.003 (4018 21)  
+2014-02-21 22:18:44 Remaining divergence = 0.002 (4018 31)  
+2014-02-21 22:18:44 Remaining divergence = 0.005 (4027 11)  
+2014-02-21 22:18:48 Remaining divergence = 0.003 (4027 21)  
+2014-02-21 22:18:53 Remaining divergence = 0.002 (4027 31)  
+2014-02-21 22:18:53 Remaining divergence = 0.008 (5018 11)  
+2014-02-21 22:18:56 Remaining divergence = 0.004 (5018 21)  
+2014-02-21 22:19:01 Remaining divergence = 0.002 (5018 31)  
+2014-02-21 22:19:02 Remaining divergence = 0.006 (5027 11)  
+2014-02-21 22:19:04 Remaining divergence = 0.004 (5027 21)  
+2014-02-21 22:19:10 Remaining divergence = 0.002 (5027 31)  
+2014-02-21 22:19:10 Remaining divergence = 0.008 (6018 11)  
+2014-02-21 22:19:13 Remaining divergence = 0.004 (6018 21)  
+2014-02-21 22:19:18 Remaining divergence = 0.002 (6018 31)  
+2014-02-21 22:19:18 Remaining divergence = 0.007 (6027 11)  
+2014-02-21 22:19:21 Remaining divergence = 0.004 (6027 21)  
+2014-02-21 22:19:26 Remaining divergence = 0.002 (6027 31)  
+A wind field library has been created for 12 situations.
+The maximum divergence is 0.015 (1018).
+2014-02-21 22:19:26 TALdia Finished without error
+
+
+

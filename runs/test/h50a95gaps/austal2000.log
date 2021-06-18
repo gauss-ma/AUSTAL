@@ -1,0 +1,180 @@
+2014-02-21 18:13:42 ---------------------------------------------------------
+TalServer:test/h50a95gaps
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/h50a95gaps 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test H50A95GAPS"
+> az "../anno95gaps.akterm"
+> gx  3500000
+> gy  5900000
+> z0     0.5
+> qs      -2
+> hq      50
+> no2   2.78  ' 10 kg/h
+> no    1.81  ' 10 kg NO2/h
+> so2   5.56  ' 20 kg/h
+> xx    5.56  ' 20 kg/h
+> pm-1  2.78  ' 10 kg/h
+> pm-2  2.78  ' 10 kg/h
+> odor  100000 ' GE/s
+> xp   375   -375
+> yp   -25    -25
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd     50
+x0  -2500
+nx    100
+y0  -2500
+ny    100
+nz     19
+---------
+
+AKTerm "test/h50a95gaps/../anno95gaps.akterm" with 8760 rows, format 3
+The anemometer height ha=14.4 m is used.
+Availability of AKTerm data 92.7 %.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   a97b9475
+
+=====================================================================
+
+TMT: Evaluation of results for substance "so2"
+TMT: 365 daily averages (thereof invalid: 23)
+TMT: File "test/h50a95gaps/so2-y00a" written.
+TMT: File "test/h50a95gaps/so2-y00s" written.
+TMT: File "test/h50a95gaps/so2-d03a" written.
+TMT: File "test/h50a95gaps/so2-d03s" written.
+TMT: File "test/h50a95gaps/so2-d03i" written.
+TMT: File "test/h50a95gaps/so2-d00a" written.
+TMT: File "test/h50a95gaps/so2-d00s" written.
+TMT: File "test/h50a95gaps/so2-d00i" written.
+TMT: Evaluation of results for substance "no2"
+TMT: 365 daily averages (thereof invalid: 23)
+TMT: File "test/h50a95gaps/no2-y00a" written.
+TMT: File "test/h50a95gaps/no2-y00s" written.
+TMT: Evaluation of results for substance "pm"
+TMT: 365 daily averages (thereof invalid: 23)
+TMT: File "test/h50a95gaps/pm-y00a" written.
+TMT: File "test/h50a95gaps/pm-y00s" written.
+TMT: File "test/h50a95gaps/pm-d35a" written.
+TMT: File "test/h50a95gaps/pm-d35s" written.
+TMT: File "test/h50a95gaps/pm-d35i" written.
+TMT: File "test/h50a95gaps/pm-d00a" written.
+TMT: File "test/h50a95gaps/pm-d00s" written.
+TMT: File "test/h50a95gaps/pm-d00i" written.
+TMT: File "test/h50a95gaps/pm-depa" written.
+TMT: File "test/h50a95gaps/pm-deps" written.
+TMT: Evaluation of results for substance "xx"
+TMT: 365 daily averages (thereof invalid: 23)
+TMT: File "test/h50a95gaps/xx-y00a" written.
+TMT: File "test/h50a95gaps/xx-y00s" written.
+TMT: File "test/h50a95gaps/xx-depa" written.
+TMT: File "test/h50a95gaps/xx-deps" written.
+TMT: Evaluation of results for substance "odor"
+TMT: 365 daily averages (thereof invalid: 23)
+TMT: File "test/h50a95gaps/odor-y00a" written.
+TMT: File "test/h50a95gaps/odor-y00s" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TQL: Calculation of short time averages for "so2"
+TQL: File "test/h50a95gaps/so2-h24a" written.
+TQL: File "test/h50a95gaps/so2-h24s" written.
+TQL: File "test/h50a95gaps/so2-h00a" written.
+TQL: File "test/h50a95gaps/so2-h00s" written.
+TQL: Calculation of short time averages for "no2"
+TQL: File "test/h50a95gaps/no2-h18a" written.
+TQL: File "test/h50a95gaps/no2-h18s" written.
+TQL: File "test/h50a95gaps/no2-h00a" written.
+TQL: File "test/h50a95gaps/no2-h00s" written.
+TMO: Time series at monitor points for "so2"
+TMO: File "test/h50a95gaps/so2-tmpa" written.
+TMO: File "test/h50a95gaps/so2-tmps" written.
+TMO: Time series at monitor points for "no2"
+TMO: File "test/h50a95gaps/no2-tmpa" written.
+TMO: File "test/h50a95gaps/no2-tmps" written.
+TMO: Time series at monitor points for "pm"
+TMO: File "test/h50a95gaps/pm-tmpa" written.
+TMO: File "test/h50a95gaps/pm-tmps" written.
+TMO: Time series at monitor points for "xx"
+TMO: File "test/h50a95gaps/xx-tmpa" written.
+TMO: File "test/h50a95gaps/xx-tmps" written.
+TMO: Time series at monitor points for "odor"
+TMO: File "test/h50a95gaps/odor-tmpa" written.
+TMO: File "test/h50a95gaps/odor-tmps" written.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+Maximum values, Deposition
+==========================
+PM       DEP : 0.0016 g/(m²*d) (+/-  2.8%) at x= -475 m, y=   25 m ( 41, 51)
+XX       DEP : 0.000e+000 g/(m²*d) (+/-  0.0%)
+=====================================================================
+
+Maximum values, Concentration at z=1.5 m
+========================================
+SO2      Y00 :   4.1 µg/m³ (+/-  2.4%) at x= -425 m, y=  -25 m ( 42, 50)
+SO2      D03 :    40 µg/m³ (+/- 10.5%) at x= -525 m, y=  -25 m ( 40, 50)
+SO2      D00 :    87 µg/m³ (+/- 17.1%) at x=   25 m, y= -275 m ( 51, 45)
+SO2      H24 :   179 µg/m³ (+/- 59.0%) at x=  -75 m, y=  225 m ( 49, 55)
+SO2      H00 :  1143 µg/m³ (+/- 23.8%) at x=  975 m, y= -375 m ( 70, 43)
+NO2      Y00 :   2.2 µg/m³ (+/-  2.9%) at x= -575 m, y=  -25 m ( 39, 50)
+NO2      H18 :   122 µg/m³ (+/- 60.3%) at x=  -75 m, y=  225 m ( 49, 55)
+NO2      H00 :   712 µg/m³ (+/- 23.8%) at x=  975 m, y= -375 m ( 70, 43)
+PM       Y00 :   3.7 µg/m³ (+/-  2.3%) at x= -475 m, y=   25 m ( 41, 51)
+PM       D35 :  16.8 µg/m³ (+/- 17.4%) at x= -325 m, y=   25 m ( 44, 51)
+PM       D00 :  71.6 µg/m³ (+/- 16.6%) at x=   25 m, y= -275 m ( 51, 45)
+XX       Y00 : 4.073e-006 g/m3  (+/-  2.4%) at x= -425 m, y=  -25 m ( 42, 50)
+
+Maximum odour hour frequency  at z=1.5 m
+========================================
+ODOR     Y00 :   8.2 %     (+/-  0.1 ) at x=  375 m, y=  -25 m ( 58, 50)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02
+xp                         375              -375
+yp                         -25               -25
+hp                         1.5               1.5
+------------+-----------------+-----------------
+SO2      Y00         3.7  2.3%         3.9  2.5%  µg/m³
+SO2      D03        26.0 20.1%        33.5 12.1%  µg/m³
+SO2      D00        34.8 15.3%        52.6 12.8%  µg/m³
+SO2      H24       110.4 43.2%       126.5 41.0%  µg/m³
+SO2      H00       256.0 59.4%       305.1 43.5%  µg/m³
+NO2      Y00         2.0  2.5%         2.1  2.6%  µg/m³
+NO2      H18        72.0 67.2%        79.1 48.0%  µg/m³
+NO2      H00       151.9 32.8%       181.3 42.4%  µg/m³
+PM       DEP      0.0015  2.5%      0.0015  2.9%  g/(m²*d)
+PM       Y00         3.4  2.2%         3.5  2.4%  µg/m³
+PM       D35        12.3 17.5%        14.2 20.3%  µg/m³
+PM       D00        32.6 15.2%        48.9 12.9%  µg/m³
+XX       DEP  0.000e+000  0.0%  0.000e+000  0.0%  g/(m²*d)
+XX       Y00  3.672e-006  2.3%  3.869e-006  2.5%  g/m3
+ODOR     Y00         8.2  0.1          7.4  0.1   %
+=====================================================================
+
+=====================================================================
+
+2014-02-21 18:28:13 AUSTAL2000 finished.
+
+
+

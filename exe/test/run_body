@@ -1,0 +1,49 @@
+#!/bin/bash
+
+WORK='test/body/h25a95'
+./test/cleardir ${WORK}
+if [ -d ${WORK}/lib ] ; then
+  cd ${WORK}/lib
+  rm -f v*.dmn*
+  rm -f k*.dmn*
+  rm -f w*.dmn*
+  rm -f z*.dmna
+  rm -f *.log
+  cd ../../../../
+fi
+rm -f ${WORK}/zg*.dmna
+./taldia ${WORK}
+./austal2000 -D ${WORK}
+
+WORK='test/body/h50a95cb'
+./test/cleardir ${WORK}
+if [ -d ${WORK}/lib ] ; then
+  cd ${WORK}/lib
+  rm -f v*.dmn*
+  rm -f k*.dmn*
+  rm -f w*.dmn*
+  rm -f z*.dmna
+  rm -f *.log
+  cd ../../../../
+fi
+rm -f ${WORK}/zg*.dmna
+./taldia ${WORK}
+./austal2000 -D ${WORK}
+
+WORK='test/body/raster'
+./test/cleardir ${WORK}
+if [ -d ${WORK}/lib ] ; then
+  cd ${WORK}/lib
+  rm -f v*.dmn*
+  rm -f k*.dmn*
+  rm -f w*.dmn*
+  rm -f z*.dmna
+  rm -f *.log
+  cd ../../../../
+fi
+rm -f ${WORK}/zg*.dmna
+./taldia ${WORK}
+./austal2000 -D ${WORK}
+
+echo "run_body finished"
+

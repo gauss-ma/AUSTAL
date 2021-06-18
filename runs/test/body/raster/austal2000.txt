@@ -1,0 +1,15 @@
+- TEST
+ti "Test rasterised buildings"
+az "../../anno95.akterm"
+xa    -500
+ya    -500
+z0     0.5
+qs      -2
+hq      15 
+xq       0
+yq       0
+xx    5.56  ' 20 kg/h
+-------------------------
+qb      -2
+rb "raster.dmna"
+=========================

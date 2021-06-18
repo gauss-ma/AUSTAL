@@ -1,0 +1,28 @@
+#!/bin/bash
+
+./test/cleardir test/h50aks
+./austal2000 -D test/h50aks
+
+./test/cleardir test/h50a95
+./austal2000 -D test/h50a95
+
+./test/cleardir test/h50a96
+./austal2000 -D test/h50a96
+
+./test/cleardir test/h50a97
+./austal2000 -D test/h50a97
+
+./test/cleardir test/h50a98
+./austal2000 -D test/h50a98
+
+./test/cleardir test/h50a99
+./austal2000 -D test/h50a99
+
+./test/cleardir test/h50a95-sci
+./austal2000 -D test/h50a95-sci
+
+./test/cleardir test/h50a95gaps
+./austal2000 -D test/h50a95gaps
+
+echo "run_all1 finished"
+

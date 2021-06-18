@@ -1,0 +1,13 @@
+#!/bin/bash
+
+./austal2000 -D test/spread/h25a95
+./austal2000 -D test/spread/h25a95
+./austal2000 -D test/spread/h25a95-spread
+./austal2000 -D test/spread/h25aks
+./austal2000 -D test/spread/h200a95
+./austal2000 -D test/spread/h200a95-spread
+./austal2000 -D test/spread/h200aks
+./austal2000 -D test/spread/h200aks-spread
+
+echo "run_spread finished"
+

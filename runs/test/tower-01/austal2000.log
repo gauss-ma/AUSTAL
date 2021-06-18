@@ -1,0 +1,109 @@
+2014-02-21 23:58:34 ---------------------------------------------------------
+TalServer:test/tower-01
+
+   Dispersion model AUSTAL2000, version 2.6.9-WI-x
+   Copyright (c) Umweltbundesamt, Dessau-Roßlau, 2002-2014
+   Copyright (c) Janicke Consulting, Überlingen, 1989-2014
+
+   Working directory: test/tower-01 
+
+Program created at 2014-02-20 13:22:53
+The program is running on host "PHORKYAS".
+
+=============================== Start of input ==============================
+> ti "Test Cooling Tower, 1"
+> az "../anno95.akterm"
+> gx  3500000
+> gy  5900000
+> z0       0.5
+> qs       0
+> hq     130
+> dq      65
+> vq       4.1
+> lq       0.003
+> rq     100
+> tq      36.0
+> so2   1000
+> xp  -6000   6000
+> yp      0      0
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd    130
+x0  -6500
+nx    100
+y0  -6500
+ny    100
+nz     19
+---------
+
+AKTerm "test/tower-01/../anno95.akterm" with 8760 rows, format 3
+The anemometer height ha=14.4 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   7b2dfbfc
+Check sum TALDIA   a375274c
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   d489e344
+
+=====================================================================
+
+TMT: Evaluation of results for substance "so2"
+TMT: 365 daily averages (thereof invalid: 0)
+TMT: File "test/tower-01/so2-y00a" written.
+TMT: File "test/tower-01/so2-y00s" written.
+TMT: File "test/tower-01/so2-d03a" written.
+TMT: File "test/tower-01/so2-d03s" written.
+TMT: File "test/tower-01/so2-d03i" written.
+TMT: File "test/tower-01/so2-d00a" written.
+TMT: File "test/tower-01/so2-d00s" written.
+TMT: File "test/tower-01/so2-d00i" written.
+TMT: Files created by AUSTAL2000_2.6.9-WI-x.
+TQL: Calculation of short time averages for "so2"
+TQL: File "test/tower-01/so2-h24a" written.
+TQL: File "test/tower-01/so2-h24s" written.
+TQL: File "test/tower-01/so2-h00a" written.
+TQL: File "test/tower-01/so2-h00s" written.
+TMO: Time series at monitor points for "so2"
+TMO: File "test/tower-01/so2-tmpa" written.
+TMO: File "test/tower-01/so2-tmps" written.
+=====================================================================
+
+Evaluation of results:
+======================
+
+     DEP: Yearly average of deposition
+     Y00: Yearly average of concentration/frequency of odour hours
+     Dnn: Highest daily average of concentration with nn exceedances
+     Hnn: Highest hourly average of concentration with nn exceedances
+
+Maximum values, Concentration at z=1.5 m
+========================================
+SO2      Y00 :   3.9 µg/m³ (+/-  7.4%) at x= 5525 m, y=-2015 m ( 93, 35)
+SO2      D03 :    56 µg/m³ (+/- 30.5%) at x= 5135 m, y=-2015 m ( 90, 35)
+SO2      D00 :   160 µg/m³ (+/- 63.6%) at x=-1495 m, y=-2535 m ( 39, 31)
+SO2      H24 :   307 µg/m³ (+/- 50.3%) at x= 6435 m, y=-2405 m (100, 32)  BORDER AREA!
+SO2      H00 :  3848 µg/m³ (+/- 66.3%) at x= 5395 m, y= 5395 m ( 92, 92)
+=====================================================================
+
+Evaluation for monitor points: Additional load
+==============================================
+POINT                       01                02
+xp                       -6000              6000
+yp                           0                 0
+hp                         1.5               1.5
+------------+-----------------+-----------------
+SO2      Y00         1.6 10.0%         2.5  6.6%  µg/m³
+SO2      D03        28.6 47.7%        26.8 39.1%  µg/m³
+SO2      D00        44.8 34.2%        44.5 35.9%  µg/m³
+SO2      H24       200.9 86.0%       194.1 74.7%  µg/m³
+SO2      H00       439.7  100%       600.8 39.6%  µg/m³
+=====================================================================
+
+=====================================================================
+
+2014-02-22 00:44:58 AUSTAL2000 finished.
+
+
+

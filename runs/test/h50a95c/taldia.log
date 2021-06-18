@@ -1,0 +1,71 @@
+2014-02-24 21:32:12 ---------------------------------------------------------
+TwnServer:test/h50a95c
+TwnServer:-B~../lib
+TwnServer:-w30000
+
+2014-02-24 21:32:12 TALdia 2.6.4-WI-x: Calculation of a wind field library.
+Programme created at 2014-02-24 17:11:04
+Programme is running on host "PHORKYAS"
+=============================== Start of input ==============================
+> ti "Test H50A95C"
+> az "../anno95.akterm"
+> gh "../tittling.grid"
+> gx  4600000
+> gy  5400000
+> qs       -2
+> xa     4400
+> ya     2000
+> hq       50
+> xq     4600
+> yq     2000
+> no2   2.78  ' 10 kg/h
+> no    1.81  ' 10 kg NO2/h
+> so2   5.56  ' 20 kg/h
+> pm-1  2.78  ' 10 kg/h
+> pm-2  2.78  ' 10 kg/h
+> xp  4975   4225
+> yp  1975   1975
+================================ End of input ===============================
+
+Definition of the computational grid:
+dd     50
+x0   2100
+nx    100
+y0   -500
+ny    100
+nz     19
+---------
+The maximum steepness of the surface is 0.63 (0.61).
+
+Standard register z0-gk.dmna (3b0d22a5) is used.
+Z0: Representation in zone 3: source 01 (4604600, 5402000) -> (3825154, 5410467)
+The average value of z0 determined from the register is 0.304 m.
+The value of z0 is rounded to 0.20 m.
+
+AKTerm "test/h50a95c/../anno95.akterm" with 8760 rows, format 3
+The anemometer height ha=9.8 m is used.
+Availability of AKTerm data 100.0 %.
+
+Check sum AUSTAL   722ecefc
+Check sum TALDIA   6fb37a2b
+Check sum VDISP    3d55c8b9
+Check sum SETTINGS fdd2774f
+Check sum AKTerm   d489e344
+2014-02-24 21:32:46 Remaining divergence = 0.016 (1018)  
+2014-02-24 21:33:19 Remaining divergence = 0.009 (1027)  
+2014-02-24 21:33:53 Remaining divergence = 0.010 (2018)  
+2014-02-24 21:34:26 Remaining divergence = 0.006 (2027)  
+2014-02-24 21:34:59 Remaining divergence = 0.003 (3018)  
+2014-02-24 21:35:33 Remaining divergence = 0.002 (3027)  
+2014-02-24 21:36:06 Remaining divergence = 0.003 (4018)  
+2014-02-24 21:36:40 Remaining divergence = 0.002 (4027)  
+2014-02-24 21:37:13 Remaining divergence = 0.002 (5018)  
+2014-02-24 21:37:42 Remaining divergence = 0.002 (5027)  
+2014-02-24 21:38:15 Remaining divergence = 0.002 (6018)  
+2014-02-24 21:38:43 Remaining divergence = 0.002 (6027)  
+A wind field library has been created for 12 situations.
+The maximum divergence is 0.016 (1018).
+2014-02-24 21:38:43 TALdia Finished without error
+
+
+

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ -d $1 ] ; then
+    rm -f $1/*-j*.dmna
+    rm -f $1/*-s*.dmna
+    rm -f $1/*-t0*.dmna
+    rm -f $1/*-t2*.dmna
+    rm -f $1/*-t3*.dmna
+    rm -f $1/*-depz.dmna
+    rm -f $1/*-deps.dmna
+    rm -f $1/*-dryz.dmna
+    rm -f $1/*-drys.dmna
+    rm -f $1/*-wetz.dmna
+    rm -f $1/*-wets.dmna
+    rm -f $1/*-zbpz.dmna
+    rm -f $1/*-zbps.dmna
+    rm -f $1/*-y*.dmna
+    rm -f $1/*-h*.dmna
+    rm -f $1/*-s*.dmna
+    rm -f $1/*-tmpa.dmna
+    rm -f $1/*-tmps.dmna
+    rm -f $1/austal2000.log
+    rm -f $1/austal2000n.log
+    rm -f $1/taldia.log
+    rm -f $1/VDIIN.DAT
+    rm -f $1/VDIOUT.DAT
+    rm -f $1/work/*.*
+fi
